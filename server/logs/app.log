@@ -1,0 +1,91 @@
+2025-03-29 13:22:34 [INFO]: Server running on port 5000
+2025-03-29 13:22:35 [INFO]: Connected to MongoDB
+2025-03-29 13:22:40 [INFO]: Server running on port 5000
+2025-03-29 13:22:41 [INFO]: Connected to MongoDB
+2025-03-29 13:27:18 [INFO]: ::1 - - [29/Mar/2025:05:27:18 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:27:18 [WARN]: Invalid or expired token: invalid signature
+2025-03-29 13:27:18 [INFO]: ::1 - - [29/Mar/2025:05:27:18 +0000] "GET /api/users/me HTTP/1.1" 403 36 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:27:18 [INFO]: ::1 - - [29/Mar/2025:05:27:18 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:27:18 [WARN]: Invalid or expired token: invalid signature
+2025-03-29 13:27:18 [INFO]: ::1 - - [29/Mar/2025:05:27:18 +0000] "GET /api/users/me HTTP/1.1" 403 36 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:27:36 [INFO]: ::1 - - [29/Mar/2025:05:27:36 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:27:36 [WARN]: Failed login attempt: Email not found - test@gmail.com
+2025-03-29 13:27:36 [INFO]: ::1 - - [29/Mar/2025:05:27:36 +0000] "POST /api/users/login HTTP/1.1" 400 37 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:28:29 [INFO]: ::1 - - [29/Mar/2025:05:28:29 +0000] "OPTIONS /api/users HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:28:29 [ERROR]: Error during registration for email rich@gmail.com: User validation failed: username: Path `username` is required.
+2025-03-29 13:28:29 [INFO]: ::1 - - [29/Mar/2025:05:28:29 +0000] "POST /api/users HTTP/1.1" 400 74 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:29:06 [INFO]: Server running on port 5000
+2025-03-29 13:29:07 [INFO]: Connected to MongoDB
+2025-03-29 13:29:09 [INFO]: ::1 - - [29/Mar/2025:05:29:09 +0000] "OPTIONS /api/users HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:29:10 [INFO]: User registered successfully: rich@gmail.com (ID: 67e78525693cff072142bb9d)
+2025-03-29 13:29:10 [INFO]: ::1 - - [29/Mar/2025:05:29:10 +0000] "POST /api/users HTTP/1.1" 201 307 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:29:21 [INFO]: ::1 - - [29/Mar/2025:05:29:21 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:29:21 [INFO]: User logged in successfully: rich@gmail.com (ID: 67e78525693cff072142bb9d)
+2025-03-29 13:29:21 [INFO]: ::1 - - [29/Mar/2025:05:29:21 +0000] "POST /api/users/login HTTP/1.1" 200 311 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:29:21 [INFO]: ::1 - - [29/Mar/2025:05:29:21 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:29:21 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:29:21 [INFO]: ::1 - - [29/Mar/2025:05:29:21 +0000] "GET /api/users/me HTTP/1.1" 200 233 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:07 [INFO]: ::1 - - [29/Mar/2025:05:32:07 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:07 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:07 [INFO]: ::1 - - [29/Mar/2025:05:32:07 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:07 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:07 [INFO]: ::1 - - [29/Mar/2025:05:32:07 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:09 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:09 [INFO]: ::1 - - [29/Mar/2025:05:32:09 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:09 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:09 [INFO]: ::1 - - [29/Mar/2025:05:32:09 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:31 [INFO]: ::1 - - [29/Mar/2025:05:32:31 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:31 [INFO]: ::1 - - [29/Mar/2025:05:32:31 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:31 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:31 [INFO]: ::1 - - [29/Mar/2025:05:32:31 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:31 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:31 [INFO]: ::1 - - [29/Mar/2025:05:32:31 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:32 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:32 [INFO]: ::1 - - [29/Mar/2025:05:32:32 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:32:32 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:32:32 [INFO]: ::1 - - [29/Mar/2025:05:32:32 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:33:35 [INFO]: ::1 - - [29/Mar/2025:05:33:35 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:33:35 [INFO]: ::1 - - [29/Mar/2025:05:33:35 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:33:35 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:33:35 [INFO]: ::1 - - [29/Mar/2025:05:33:35 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:33:35 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:33:35 [INFO]: ::1 - - [29/Mar/2025:05:33:35 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:03 [INFO]: ::1 - - [29/Mar/2025:05:35:03 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:03 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:35:03 [INFO]: ::1 - - [29/Mar/2025:05:35:03 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:03 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:35:03 [INFO]: ::1 - - [29/Mar/2025:05:35:03 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:13 [INFO]: ::1 - - [29/Mar/2025:05:35:13 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:13 [INFO]: User logged in successfully: rich@gmail.com (ID: 67e78525693cff072142bb9d)
+2025-03-29 13:35:13 [INFO]: ::1 - - [29/Mar/2025:05:35:13 +0000] "POST /api/users/login HTTP/1.1" 200 311 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:13 [INFO]: ::1 - - [29/Mar/2025:05:35:13 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:13 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:35:13 [INFO]: ::1 - - [29/Mar/2025:05:35:13 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:30 [INFO]: ::1 - - [29/Mar/2025:05:35:30 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:30 [INFO]: ::1 - - [29/Mar/2025:05:35:30 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:31 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:35:31 [INFO]: ::1 - - [29/Mar/2025:05:35:31 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:31 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:35:31 [INFO]: ::1 - - [29/Mar/2025:05:35:31 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:33 [INFO]: ::1 - - [29/Mar/2025:05:35:33 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:33 [INFO]: User logged in successfully: rich@gmail.com (ID: 67e78525693cff072142bb9d)
+2025-03-29 13:35:33 [INFO]: ::1 - - [29/Mar/2025:05:35:33 +0000] "POST /api/users/login HTTP/1.1" 200 311 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:35:34 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:35:34 [INFO]: ::1 - - [29/Mar/2025:05:35:34 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:36:35 [INFO]: ::1 - - [29/Mar/2025:05:36:35 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:36:35 [INFO]: User logged in successfully: rich@gmail.com (ID: 67e78525693cff072142bb9d)
+2025-03-29 13:36:35 [INFO]: ::1 - - [29/Mar/2025:05:36:35 +0000] "POST /api/users/login HTTP/1.1" 200 311 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:36:35 [INFO]: ::1 - - [29/Mar/2025:05:36:35 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:36:35 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:36:35 [INFO]: ::1 - - [29/Mar/2025:05:36:35 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:43:07 [INFO]: ::1 - - [29/Mar/2025:05:43:07 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:43:07 [INFO]: User logged in successfully: rich@gmail.com (ID: 67e78525693cff072142bb9d)
+2025-03-29 13:43:07 [INFO]: ::1 - - [29/Mar/2025:05:43:07 +0000] "POST /api/users/login HTTP/1.1" 200 311 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:43:08 [INFO]: ::1 - - [29/Mar/2025:05:43:08 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:43:08 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 13:43:08 [INFO]: ::1 - - [29/Mar/2025:05:43:08 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 13:44:23 [INFO]: Server running on port 5000
+2025-03-29 13:44:25 [INFO]: Server running on port 5000
+2025-03-29 13:44:26 [INFO]: Connected to MongoDB
+2025-03-29 14:34:22 [INFO]: Server running on port 5000
+2025-03-29 14:34:22 [INFO]: Connected to MongoDB
