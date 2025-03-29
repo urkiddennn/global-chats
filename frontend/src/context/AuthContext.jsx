@@ -53,13 +53,13 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem('token', token);
     };
 
-    const signup = async (userName, email, password) => {
+    const signup = async (username, email, password) => {
         const response = await fetch('http://localhost:5000/api/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ userName, email, password }),
+            body: JSON.stringify({ username, email, password }),
         });
 
         if (!response.ok) {
@@ -67,8 +67,8 @@ export const AuthProvider = ({ children }) => {
             throw new Error(errorData.error || 'Signup failed');
         }
 
-        const { userName: registeredUserName, email: registeredEmail } = await response.json();
-        return { userName: registeredUserName, email: registeredEmail };
+        const { username: registeredUserName, email: registeredEmail } = await response.json();
+        return { username: registeredUserName, email: registeredEmail };
     };
 
     const logout = () => {

@@ -3,7 +3,7 @@ import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-    const [userName, setUserName] = useState('');
+    const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -14,7 +14,7 @@ const Signup = () => {
         e.preventDefault();
         setError('');
         try {
-            await signup(userName, email, password);
+            await signup(username, email, password);
             navigate('/login');
         } catch (err) {
             setError(err.message);
@@ -31,7 +31,7 @@ const Signup = () => {
                         className='w-full h-12 outline-1 rounded-lg p-2'
                         placeholder='Enter username'
                         type="text"
-                        value={userName}
+                        value={username}
                         onChange={(e) => setUserName(e.target.value)}
                         required
                     />

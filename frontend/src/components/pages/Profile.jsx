@@ -7,6 +7,8 @@ const Profile = () => {
     const { user, logout } = useContext(AuthContext);
     const navigate = useNavigate();
 
+    console.log(user)
+
     // If the user is not logged in, redirect to login page
     if (!user) {
         navigate('/login');
@@ -20,12 +22,9 @@ const Profile = () => {
 
     return (
         <div className='w-full h-full flex justify-center items-center flex-col '>
-            <h2>Profile</h2>
-            <p><strong>Username:</strong> {user.userName}</p>
-            <p><strong>Email:</strong> {user.email}</p>
+            <h2 className='text-2xl font-bold'>Profile</h2>
             {user.profilePicture && (
-                <div>
-                    <strong>Profile Picture:</strong>
+                <div className='w-32 h-32 overflow-hidden rounded-full border-2 flex justify-center items-center '>
                     <img
                         src={user.profilePicture}
                         alt="Profile"
@@ -33,6 +32,9 @@ const Profile = () => {
                     />
                 </div>
             )}
+            <p>{user.username}</p>
+            <p><strong>Email:</strong> {user.email}</p>
+
             <button onClick={handleLogout}>Logout</button>
 
             <NavBar />

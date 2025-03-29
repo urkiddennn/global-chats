@@ -18,7 +18,7 @@ const NavBar = () => {
         navigate("/chats")
     }
     return (
-        <div className='w-auto rounded-lg p-3 outline-1 absolute bottom-10 flex justify-evenly gap-3'>
+        <div className='w-auto rounded-lg p-3 outline-1 absolute bottom-3 flex justify-evenly gap-3'>
             {location.pathname === "/main" &&
 
                 < button className='w-10 '><GoHomeFill size={"2em"} className='hover:text-blue-500 text-blue-500  ' /></button>

@@ -9,6 +9,7 @@ import winston from "winston";
 import morgan from "morgan";
 
 import Users from "./Models/UserModel.js";
+import Messages from "./Models/MessagesModel.js"; // Import the Messages model
 
 dotenv.config();
 
@@ -48,6 +49,13 @@ const healthLimiter = rateLimit({
     message: "Too many requests from this DDoS attacker, please try again later",
 });
 
+// Rate limiter for chat endpoints
+const chatLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 50, // Limit each IP to 50 requests per window
+    message: "Too many chat requests from this IP, please try again later.",
+});
+
 app.use(cors());
 app.use(express.json({ limit: "5mb" }));
 
@@ -68,7 +76,7 @@ app.get("/api/health", healthLimiter, (_, res) => {
 
 // JWT authentication middleware
 const authenticateToken = (req, res, next) => {
-    const authHeader = req.headers['authorization']; // Fixed typo: 'autherization' to 'authorization'
+    const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
 
     if (!token) {
@@ -86,6 +94,7 @@ const authenticateToken = (req, res, next) => {
     }
 };
 
+// Create new user (signup)
 app.post("/api/users", async (req, res) => {
     try {
         const { username, email, password, profilePicture } = req.body;
@@ -140,9 +149,8 @@ app.post("/api/users/login", async (req, res) => {
             return res.status(400).json({ error: "Invalid email or password" });
         }
 
-        // Generate token
         const token = jwt.sign(
-            { id: user._id, email: user.email }, // Include user ID in the token
+            { id: user._id, email: user.email },
             process.env.JWT_TOKEN || 'asicewkn4f',
             { expiresIn: '1h' }
         );
@@ -164,17 +172,16 @@ app.get("/api/users", async (req, res) => {
     try {
         const users = await Users.find().select('-password');
         logger.info(`Retrieved list of all users (total: ${users.length})`);
-        res.status(200).json(users); // Fixed status code: 400 to 200
+        res.status(200).json(users);
     } catch (err) {
         logger.error(`Error retrieving users: ${err.message}`);
-        res.status(500).json({ error: err.message }); // Fixed status code: 400 to 500
+        res.status(500).json({ error: err.message });
     }
 });
 
 // Get logged-in user's data
 app.get("/api/users/me", authenticateToken, async (req, res) => {
     try {
-        // Validate the user ID from the JWT
         if (!mongoose.Types.ObjectId.isValid(req.user.id)) {
             logger.warn(`Invalid user ID in token: ${req.user.id}`);
             return res.status(400).json({ error: "Invalid user ID" });
@@ -190,6 +197,54 @@ app.get("/api/users/me", authenticateToken, async (req, res) => {
         res.status(200).json(user);
     } catch (err) {
         logger.error(`Error retrieving user data for ID ${req.user.id}: ${err.message}`);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// Send a new message (authenticated users only)
+app.post("/api/messages", chatLimiter, authenticateToken, async (req, res) => {
+    try {
+        const { content } = req.body;
+
+        // Validate the message content
+        if (!content || typeof content !== 'string' || content.trim().length === 0) {
+            logger.warn(`Invalid message content from user ${req.user.id}`);
+            return res.status(400).json({ error: "Message content is required and must be a non-empty string" });
+        }
+
+        // Create a new message
+        const message = new Messages({
+            content: content.trim(),
+            sender: req.user.id, // From the JWT token
+        });
+
+        await message.save();
+        logger.info(`Message sent by user ${req.user.id}: ${content}`);
+
+        // Populate the sender field with user data (excluding password)
+        const populatedMessage = await Messages.findById(message._id)
+            .populate('sender', 'username profilePicture')
+            .exec();
+
+        res.status(201).json(populatedMessage);
+    } catch (err) {
+        logger.error(`Error sending message for user ${req.user.id}: ${err.message}`);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// Get all messages (authenticated users only)
+app.get("/api/messages", chatLimiter, authenticateToken, async (req, res) => {
+    try {
+        const messages = await Messages.find()
+            .sort({ createdAt: -1 }) // Sort by newest first
+            .populate('sender', 'username profilePicture') // Populate sender with username and profile picture
+            .limit(50); // Limit to the last 50 messages
+
+        logger.info(`User ${req.user.id} retrieved ${messages.length} messages`);
+        res.status(200).json(messages);
+    } catch (err) {
+        logger.error(`Error retrieving messages for user ${req.user.id}: ${err.message}`);
         res.status(500).json({ error: err.message });
     }
 });
