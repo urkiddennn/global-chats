@@ -89,3 +89,71 @@
 2025-03-29 13:44:26 [INFO]: Connected to MongoDB
 2025-03-29 14:34:22 [INFO]: Server running on port 5000
 2025-03-29 14:34:22 [INFO]: Connected to MongoDB
+2025-03-29 14:35:14 [INFO]: Server running on port 5000
+2025-03-29 14:35:14 [INFO]: Connected to MongoDB
+2025-03-29 14:40:05 [INFO]: ::1 - - [29/Mar/2025:06:40:05 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:05 [INFO]: ::1 - - [29/Mar/2025:06:40:05 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:05 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:40:05 [INFO]: ::1 - - [29/Mar/2025:06:40:05 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:05 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:40:05 [INFO]: ::1 - - [29/Mar/2025:06:40:05 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:27 [INFO]: ::1 - - [29/Mar/2025:06:40:27 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:27 [INFO]: ::1 - - [29/Mar/2025:06:40:27 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:27 [INFO]: ::1 - - [29/Mar/2025:06:40:27 +0000] "GET /api/users/me HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:27 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:40:27 [INFO]: ::1 - - [29/Mar/2025:06:40:27 +0000] "GET /api/users/me HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:40:28 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:41:28 [INFO]: ::1 - - [29/Mar/2025:06:41:28 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 14:41:28 [INFO]: User logged in successfully: rich@gmail.com (ID: 67e78525693cff072142bb9d)
+2025-03-29 14:41:28 [INFO]: ::1 - - [29/Mar/2025:06:41:28 +0000] "POST /api/users/login HTTP/1.1" 200 311 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 14:41:28 [INFO]: ::1 - - [29/Mar/2025:06:41:28 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 14:41:28 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:41:28 [INFO]: ::1 - - [29/Mar/2025:06:41:28 +0000] "GET /api/users/me HTTP/1.1" 200 233 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 14:42:55 [INFO]: ::1 - - [29/Mar/2025:06:42:55 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:42:55 [INFO]: ::1 - - [29/Mar/2025:06:42:55 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:42:55 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:42:55 [INFO]: ::1 - - [29/Mar/2025:06:42:55 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:42:55 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:42:55 [INFO]: ::1 - - [29/Mar/2025:06:42:55 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:49:47 [INFO]: ::1 - - [29/Mar/2025:06:49:47 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:49:47 [INFO]: ::1 - - [29/Mar/2025:06:49:47 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:49:47 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:49:47 [INFO]: ::1 - - [29/Mar/2025:06:49:47 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:49:47 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:49:47 [INFO]: ::1 - - [29/Mar/2025:06:49:47 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:53:48 [INFO]: ::1 - - [29/Mar/2025:06:53:48 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:53:48 [INFO]: ::1 - - [29/Mar/2025:06:53:48 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:53:48 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:53:48 [INFO]: ::1 - - [29/Mar/2025:06:53:48 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:53:48 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:53:48 [INFO]: ::1 - - [29/Mar/2025:06:53:48 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:57:11 [INFO]: ::1 - - [29/Mar/2025:06:57:11 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:57:11 [INFO]: ::1 - - [29/Mar/2025:06:57:11 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:57:11 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:57:11 [INFO]: ::1 - - [29/Mar/2025:06:57:11 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:57:11 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:57:11 [INFO]: ::1 - - [29/Mar/2025:06:57:11 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:59:50 [INFO]: ::1 - - [29/Mar/2025:06:59:50 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:59:50 [INFO]: ::1 - - [29/Mar/2025:06:59:50 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:59:50 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:59:50 [INFO]: ::1 - - [29/Mar/2025:06:59:50 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 14:59:50 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 14:59:50 [INFO]: ::1 - - [29/Mar/2025:06:59:50 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:22 [INFO]: ::1 - - [29/Mar/2025:07:04:22 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:22 [INFO]: ::1 - - [29/Mar/2025:07:04:22 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:22 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 15:04:22 [INFO]: ::1 - - [29/Mar/2025:07:04:22 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:22 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 15:04:22 [INFO]: ::1 - - [29/Mar/2025:07:04:22 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:55 [INFO]: ::1 - - [29/Mar/2025:07:04:55 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:55 [INFO]: ::1 - - [29/Mar/2025:07:04:55 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:55 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 15:04:55 [INFO]: ::1 - - [29/Mar/2025:07:04:55 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:04:55 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 15:04:55 [INFO]: ::1 - - [29/Mar/2025:07:04:55 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+2025-03-29 15:05:16 [INFO]: ::1 - - [29/Mar/2025:07:05:16 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 15:05:16 [INFO]: ::1 - - [29/Mar/2025:07:05:16 +0000] "OPTIONS /api/users/me HTTP/1.1" 204 0 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 15:05:16 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 15:05:16 [INFO]: ::1 - - [29/Mar/2025:07:05:16 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
+2025-03-29 15:05:16 [INFO]: User data retrieved successfully for ID: 67e78525693cff072142bb9d
+2025-03-29 15:05:16 [INFO]: ::1 - - [29/Mar/2025:07:05:16 +0000] "GET /api/users/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/134.0.0.0"
