@@ -86,20 +86,20 @@ const Chats = () => {
             {loading ? (
                 <p>Loading messages...</p>
             ) : (
-                <div style={{ overflowY: 'auto', border: '1px solid #ccc', padding: '10px', marginBottom: '20px' }} className='w-full h-3/4'>
+                <div style={{ overflowY: 'auto', border: '1px solid #ccc', padding: '10px', marginBottom: '20px' }} className='w-full h-3/4 '>
                     {messages.length === 0 ? (
                         <p>No messages yet. Be the first to chat!</p>
                     ) : (
                         messages.map((message) => (
                             <div
                                 key={message._id}
-                                className='w-full'
+                                className='w-auto flex '
                                 style={{
                                     marginBottom: '10px',
                                     padding: '5px',
                                     backgroundColor: message.sender._id === user.id ? '#e0f7fa' : '#f5f5f5',
                                     borderRadius: '5px',
-                                    display: 'flex',
+
                                     alignItems: 'center',
                                     width: "100%",
                                 }}
