@@ -40,3 +40,11 @@ This project is a full-stack application featuring a global chat where users can
    ```bash
    git clone <your-repo-url>
    cd <your-repo-name>
+
+
+## Screenshots
+
+Here are some screenshots of the application:
+
+![Homepage](1.png)
+![Post Page](screenshots/2.png)
